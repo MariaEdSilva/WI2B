@@ -1,0 +1,22 @@
+body, html{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td, th{
+    font-size: 55px;
+    padding: 3px 14px;
+    text-align: center;
+}
+
+table{
+    border: 1px solid black;
+    margin: 13px 13px;
+    background-color: rgb(211, 210, 210);
+    border-radius: 2px solid;
+}
