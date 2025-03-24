@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-                                                                         <html lang="pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,6 +62,39 @@
         cartela_N = [31,44,39,40,37];
         cartela_G = [48,51,55,57,60];
         cartela_O = [65,66,71,69,74];
+
+        function GerarArray(NumeroInicial, quantidade){
+            var retorno = []
+            for (var i = 0; i < quantidade; i++)
+            {
+                retorno.push(NumeroInicial)
+                NumeroInicial++;
+            }
+            return retorno
+        }
+        cartela_B = GerarArray(1,15);
+        console.log("Array da coluna B");
+        console.log(cartela_B);
+
+        cartela_I = GerarArray(16,15);
+        console.log("Array da coluna I");
+        console.log(cartela_I);
+
+        cartela_N = GerarArray(31,15);
+        console.log("Array da coluna N");
+        console.log(cartela_N);
+
+        cartela_G = GerarArray(46,15);
+        console.log("Array da coluna G");
+        console.log(cartela_G);
+
+        cartela_O = GerarArray(61,15);
+        console.log("Array da coluna O");
+        console.log(cartela_O);
+
+        /*Exercicio para nota:
+        faça 5 arrays, um para cada letra do bingo
+        e dentro deles coloque 5 numeros referentes a sua letra*/
     </script>
 </div>
 </body>
