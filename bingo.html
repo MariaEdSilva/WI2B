@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tr>
-            <td id="b1" onclick="MarcarSorteado()">12</td>
+            <td id="b1" onclick="MarcarSorteado('b1', this )">12</td>
             <td id="i1">18</td>
             <td id="n1">31</td>
             <td id="g1">48</td>
@@ -97,13 +97,23 @@
         console.log(b2)
         console.log(b1)
 
-        function MarcarSorteado(){
-            alert("deu certo o clique")
+        function MarcarSorteado(nomeID, elemento){
+            console.log("Elemento=")
+            console.log(elemento)
+            console.log(nomeID)
+            elemento.style.backgroundColor = "#a8626d"
+
+            if(elemento.style.backgroundColor == "#a8626d")
+            {
+                alert("a cor é rosa escuro")
+            }
+            else
+            {
+                
+            }
         }
 
-        /*Exercicio para nota:
-        faça 5 arrays, um para cada letra do bingo
-        e dentro deles coloque 5 numeros referentes a sua letra*/
+        
     </script>
 </div>
 </body>
