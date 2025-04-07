@@ -21,17 +21,17 @@
         </thead>
         <tr>
             <td id="b1" onclick="MarcarSorteado('b1', this )">12</td>
-            <td id="i1">18</td>
-            <td id="n1">31</td>
-            <td id="g1">48</td>
-            <td id="o1">65</td>
+            <td id="i1" onclick="MarcarSorteado('i1', this )">18</td>
+            <td id="n1" onclick="MarcarSorteado('n1', this )">31</td>
+            <td id="g1" onclick="MarcarSorteado('g1', this )">48</td>
+            <td id="o1" onclick="MarcarSorteado('o1', this )">65</td>
         </tr>
         <tr>
-            <td id="b2">15</td>
-            <td id="i2">23</td>
-            <td id="n2">44</td>
-            <td id="g2">51</td>
-            <td id="o2">66</td>
+            <td id="b2" onclick="MarcarSorteado('b2', this )">15</td>
+            <td id="i2" onclick="MarcarSorteado('i2', this )">23</td>
+            <td id="n2" onclick="MarcarSorteado('n2', this )">44</td>
+            <td id="g2" onclick="MarcarSorteado('g2', this )">51</td>
+            <td id="o2" onclick="MarcarSorteado('o2', this )">66</td>
         </tr>
         <tr>
             <td id="b3">13</td>
@@ -55,6 +55,10 @@
             <td id="o5">74</td>
         </tr>
     </table>
+
+    <button onclick="GerarCartela()">
+        Gerar Cartela
+    </button>
 
     <script>
         cartela_B = [12,15,13,8,3];
@@ -110,6 +114,28 @@
             else
             {
                 
+            }
+        }
+
+        function GerarCartela()
+        {
+            for(var i = 1; i <= 5; i++)
+            {
+                var td = document.getElementById("b"+i)
+                td.innerText = cartela_B[i]
+
+                 td = document.getElementById("i"+i)
+                td.innerText = cartela_I[i]
+
+                 td = document.getElementById("n"+i)
+                td.innerText = cartela_N[i]
+
+                 td = document.getElementById("g"+i)
+                td.innerText = cartela_G[i]
+
+                 td = document.getElementById("o"+i)
+                td.innerText = cartela_O[i]
+
             }
         }
 
