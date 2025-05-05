@@ -1,12 +1,11 @@
 body{
     background-color: rgb(226, 226, 226);
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-table, tr, td{
+table, tr, td, button{
     background: #f8a8b5;
     border: 1px solid;
     padding: 5px;
