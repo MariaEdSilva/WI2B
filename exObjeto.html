@@ -10,19 +10,37 @@
     
     <script>
 
-        var Carro =
+        var Carro1 =
         {
             "marca":"Volkswagen",
             "modelo":"Golf",
-            "escreverModelo": () => 
-            {
-                document.write("Golf")
-            },
-            "ano":"2022",
+            "ano":"2024",
+            "cor": "vermelho"
 
         }
-        document.write(Carro.modelo)
+
+        var Carro2 = 
+        {
+            "marca":"",
+            "modelo":"",
+            "ano":"",
+            "cor":"azul",
+        }
+
+        var Carro3 = 
+        {
+            "marca":"",
+            "modelo":"",
+            "ano":"",
+            "cor":"prata",
+        }
         
+        document.write("O modelo do primeiro carro é: " +Carro1.modelo)
+        document.write("A cor do primeiro carro é: " +Carro1.cor)
+        document.write("A cor do segundo carro é: " +Carro2.cor)
+        document.write("A cor do terceiro carro é: " +Carro3.cor)
+        
+
 
     </script>
 </body>
