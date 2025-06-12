@@ -9,7 +9,11 @@
 <body>
     <form action="salvar.html" method="post" onsubmit="return ValidarFormulario()">
         <label>Cep</label>
-        <input type="text" name="cep" id="cep" class="campo" /><br><br>
+        <input type="text" name="cep" id="cep" class="campo" />
+        <button onclick="consultaAPI()" type="button">
+            Consultar CEP
+        </button>
+        <br><br>
         <label>Endereço</label>
         <input type="text" name="endereco" id="endereco" class="campo" /> <br><br>
         <label>Número</label>
@@ -26,6 +30,23 @@
     </form>
     
     <script>
+        function consultaAPI()
+        {
+            var cep = document.getElementById("cep")
+            var url = "https://viacep.com.br/ws/"+cep.value+"/json/"
+            fetch( url ).then((response) => response.json())
+            .then((dados)=> {
+                var endereco = document.getElementById("endereco")
+                var bairro = document.getElementById("bairro")
+                var estado = document.getElementById("estado")
+                var cidade = document.getElementById("cidade")
+                endereco.value = dados.logradouro
+                bairro.value = dados.bairro
+                estado.value = dados.estado
+                cidade.value = dados.localidade
+            })
+        }
+
         function ValidarFormulario()
         {
             var cep = document.getElementById('cep')
