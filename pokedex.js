@@ -13,8 +13,10 @@ var habilidade0 = document.querySelector('.habilidade0');
 var habilidade1 = document.querySelector('.habilidade1');
 var tipopokemon = document.querySelector('#tipo');
 
+var pokemonfemea = document.querySelector('#femea');
+
  
-let searchpokemon = 1;
+let searchpokemon = 52;
  
 var fetchPokemon = async (pokemon) => {
  
@@ -30,6 +32,9 @@ var fetchPokemon = async (pokemon) => {
         NumPokemon.innerHTML = '';
     }
     
+    if(pokemonfemea){
+        pokemonfemea.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_female'];
+    }
 
  
 }
