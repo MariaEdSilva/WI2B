@@ -15,8 +15,10 @@ var tipopokemon = document.querySelector('#tipo');
 
 var pokemonfemea = document.querySelector('#femea');
 
+var nao = document.querySelector('#nao');
+
  
-let searchpokemon = 52;
+let searchpokemon = 1;
  
 var fetchPokemon = async (pokemon) => {
  
@@ -32,9 +34,7 @@ var fetchPokemon = async (pokemon) => {
         NumPokemon.innerHTML = '';
     }
     
-    if(pokemonfemea){
-        pokemonfemea.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_female'];
-    }
+  
 
  
 }
@@ -46,6 +46,15 @@ var renderPokemon = async (pokemon) => {
     NumPokemon.innerHTML = data.id;
    
     ImgPokemon.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    if (pokemonfemea){
+        pokemonfemea.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_female'];
+        nao.innerHTML = '';
+    }
+    else{
+        pokemonfemea.style.display = 'none';
+        nao.innerHTML = 'Não existe!';
+    }
+    
     searchpokemon = data.id;
     
     habilidade0.innerHTML = data.abilities[0].ability.name;
