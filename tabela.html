@@ -7,38 +7,69 @@
     <title>Document</title>
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style=" margin:5% ;">
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">2º Infonet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tabela.html">Tabela</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Formulário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <div class="container pt-3">
     <table class="table table-striped-columns">
-        <thead>
-          <tr class="table-dark">
-            <th scope="col">ID</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Idade</th>
-            <th scope="col">Profissão</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-dark">
-            <th scope="row">1</th>
-            <td>José</td>
-            <td>36 anos</td>
-            <td>Advogado</td>
-          </tr>
-          <tr class="table-dark">
-            <th scope="row">2</th>
-            <td>Adriana</td>
-            <td>49 anos</td>
-            <td>Secretária</td>
-          </tr>
-          <tr class="table-dark">
-            <th scope="row">3</th>
-            <td>Catarina</td>
-            <td>19 anos</td>
-            <td>Enfermeira</td>
-          </tr>
-        </tbody>
-      </table>
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Profissão</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-dark">
+          <th scope="row">1</th>
+          <td>José</td>
+          <td>36 anos</td>
+          <td>Advogado</td>
+        </tr>
+        <tr class="table-dark">
+          <th scope="row">2</th>
+          <td>Adriana</td>
+          <td>49 anos</td>
+          <td>Secretária</td>
+        </tr>
+        <tr class="table-dark">
+          <th scope="row">3</th>
+          <td>Catarina</td>
+          <td>19 anos</td>
+          <td>Enfermeira</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    
 
 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
