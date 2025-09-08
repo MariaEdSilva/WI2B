@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
     <style>
         div{
             /* border:1px solid; */
@@ -44,7 +44,7 @@
 <body class="bg-dark-subtle">
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">2º Infonet</a>
+      <a class="navbar-brand" href="#">2º Infonet💖</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,34 +67,57 @@
     </div>
   </nav>
   <div class="container">
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Launch static backdrop modal
+    </button>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
           <div class="row">
             <div class="col-6">
-              Cadastro
-              <label for="validationCustom03" class="form-label">Nome</label>
+              <h3>Cadastro</h3> <br>
+              <label for="validationCustom03" class="form-label">Nome</label><br>
               <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
             </div>    
-            <div class="col-6">
-                <label for="validationCustom03" class="form-label">E-mail</label>
+            <div class="col-6"><br><br>
+                <label for="validationCustom03" class="form-label">E-mail</label><br>
                 <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
             </div>
             </div><!--Fechei a primeira linha-->
 
             <div class="row"><!--Segunda linha-->
               <div class="col-3">
-                    <label for="validationCustom03" class="form-label">CEP</label>
+                    <label for="validationCustom03" class="form-label">CEP</label><br>
                     <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
               </div>
               <div class="col-3">
-                <label for="validationCustom03" class="form-label">Cidade</label>
+                <label for="validationCustom03" class="form-label">Cidade</label><br>
                 <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
               </div>
               <div class="col-6">
-                <label for="validationCustom03" class="form-label">Estado</label>
+                <label for="validationCustom03" class="form-label">Estado</label><br>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Escolha um estado</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="1">Sólido</option>
+                    <option value="2">Líquido</option>
+                    <option value="3">Gasoso</option>
                   </select>
               </div>
             </div> <!--Fechei a segunda linha-->
@@ -102,11 +125,11 @@
               <div class="row">
                 <div class="col-6">
                 
-                  <label for="validationCustom03" class="form-label">Endereço</label>
+                  <label for="validationCustom03" class="form-label">Endereço</label><br>
                   <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
                 </div>
                 <div class="col-6">
-                    <label for="validationCustom03" class="form-label">Bairro</label>
+                    <label for="validationCustom03" class="form-label">Bairro</label><br>
                   <input type="text" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="validationCustom03" required>
                 </div>
                 
@@ -114,7 +137,7 @@
 
               <div class="row"><!--4ºLinha-->
                 <div class="col-3">
-                  <label for="exampleInputPassword1" class="form-label">Senha</label>
+                  <label for="exampleInputPassword1" class="form-label">Senha</label><br>
                   <input type="password" class="p-3 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-3" id="exampleInputPassword1">
                 </div>
                 <div class="col-3">
@@ -128,9 +151,10 @@
               </div><!--Fechei a 4ºlinha-->
             </div>
           
+          
 
 
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
